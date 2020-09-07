@@ -1,0 +1,42 @@
+.card {
+  margin: 0 1rem 1rem 0;
+}
+
+@media only screen and (min-width: 700px) {
+  #ingredUl {
+    -moz-column-count: 2;
+    -moz-column-gap: 1.5em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1.5em;
+    column-count: 2;
+    column-gap: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  #ingredUl {
+    -moz-column-count: 3;
+    -moz-column-gap: 1.5em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1.5em;
+    column-count: 3;
+    column-gap: 1.5em;
+  }
+}
+
+body {
+  background-image: url('images/background.jpg');
+  background-image: url('images/background-2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 8em
+}
+
+body>.container {
+  background: aafaf7;
+  background: white;
+  padding: 3rem;
+  border: 1px solid lightgray;
+}

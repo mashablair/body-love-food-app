@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Love App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-5" style="text-align: center">Body Love Food App</h1>
+    <p class="text-muted">Hi! This app will help you to find recipes that match the ingredients you already have on hand. Chances are you have a lot of great foods at home and don't need to buy anything else for a healthy, delicious meal.</p>
+    <p class="text-muted">The recipes are based on the book by <a href="#" id="show_book" role="button">Kelly LeVeque "Body Love Every Day"</a></p>
+    <div class="d-none" id="book">
+      <button id="close_book" type="button" class="close" aria-label="Close" style="font-size: 3em">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B079DQG85M&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_K69uFbN500KP3"></iframe>
+    </div>
+
+
+    <div class="my-5">
+      <h2>My Ingredients 🥗</h2>
+      <p>Here is the food you have at home. Click 'Filter' button below to see the matching recipes.</p>
+      <div id="ingredients"></div>
+    </div>
+
+    <div class="my-5 card bg-light card-body">
+      <h2>Specific food 🍤</h2>
+      <form action="" id="one_food">
+        <div class="mb-3">
+          <label for="input1" class="form-label">Enter one food item to see recipes with it</label>
+          <input type="text" class="form-control" id="input1" placeholder="e.g. avocado or fish">
+        </div>
+      </form>
+    </div>
+
+    <div class="my-5">
+      <h2>Recipes 🍽️</h2>
+      <div class="my-3">
+        <button id="showAll" class="btn btn-outline-dark mr-2">Show All</button>
+        <button id="hideAll" class="btn btn-secondary mr-2">Hide All</button>
+        <button id="filter" class="btn btn-primary">Filter!</button>
+      </div>
+      <p id="filter_message"></p>
+      <div id="cards">
+        <div class="alert alert-success" role="alert">
+          Yo, let's find some recipes for ya!
+        </div>
+      </div>
+    </div>
+
+    <div class="my-5">
+      <h2>Resources</h2>
+      <p class="text-muted">Recipes by Kelly LeVeque</p>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="https://kellyleveque.com/recipes/fab-four-smoothie">Fab Four Smoothies</a></li>
+        <li class="list-group-item"><a href="https://kellyleveque.com/breakfast">Breakfast</a></li>
+        <li class="list-group-item"><a href="https://kellyleveque.com/lunch">Lunch</a></li>
+        <li class="list-group-item"><a href="https://kellyleveque.com/dinner">Dinner</a></li>
+        <li class="list-group-item"><a href="https://kellyleveque.com/recent-posts/2015/7/9/detoxifying-green-salad">Detox</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
