@@ -1,8 +1,31 @@
-var my_ingredients = ["protein powder", "avocado", "chia", "lemon", "greens", "cucumber", "milk", "ghee", "garlic", "shrimp", "eggs", "vinegar", "canned fish", "nuts", "fish", "hemp"];
+var my_ingredients = [
+  "protein powder",
+  "avocado",
+  "chia",
+  "lemon",
+  "greens",
+  "cucumber",
+  "milk",
+  "ghee",
+  "garlic",
+  "shrimp",
+  "eggs",
+  "vinegar",
+  "canned fish",
+  "nuts",
+  "fish",
+  "hemp",
+  "turmeric",
+  "chicken",
+  "green powder",
+  "coconut milk",
+];
+
+let shopping_list = [];
 
 var cards = [
   {
-    num: 1,
+    num: "1",
     name: "Spa Day Fab Four Smoothie",
     ingredients: ["protein powder", "avocado", "chia", "lemon", "greens", "cucumber", "milk"],
     category: "Breakfast",
@@ -11,7 +34,7 @@ var cards = [
     url: "https://kellyleveque.com/recent-posts/2015/11/15/spa-smoothie",
   },
   {
-    num: 2,
+    num: "2",
     name: "Shrimp Scampi with Zoodles",
     ingredients: ["ghee", "garlic", "shrimp", "greens", "zucchini", "lemon"],
     category: "Dinner",
@@ -20,7 +43,7 @@ var cards = [
     url: "https://www.instagram.com/p/BiDgSB0H7lL/?hl=en",
   },
   {
-    num: 3,
+    num: "3",
     name: "Flaky Tuna and Toasted Walnut Salad",
     ingredients: ["vinegar", "greens", "canned fish", "fish", "nuts"],
     category: "Lunch",
@@ -29,7 +52,7 @@ var cards = [
     url: "https://kellyleveque.com/recent-posts/marisas-carnitas-kale-salad-w3xm3",
   },
   {
-    num: 4,
+    num: "4",
     name: "Original Green Fab Four Smoothie",
     ingredients: ["protein powder", "avocado", "chia", "greens", "milk"],
     category: "Breakfast",
@@ -38,12 +61,48 @@ var cards = [
     url: "https://kellyleveque.com/recent-posts/fab-4-smoothies-to-try-this-summer",
   },
   {
-    num: 5,
+    num: "5",
     name: "Ribboned Rainbow Salad Over Hummus",
     ingredients: ["zucchini", "carrot", "cucumber", "greens", "radish", "hemp"],
-    category: "Breakfast",
+    category: "Lunch",
     img: "images/ribbon.png",
-    page: 167,
-    url: "https://kellyleveque.com/recent-posts/fab-4-smoothies-to-try-this-summer",
+    page: 288,
+    url: "https://homesweethunter.com/2020/02/02/the-healthy-lifestyle-book-everyone-should-read/",
+  },
+  {
+    num: "6",
+    name: "Garlic Salmon and Brussel Sprouts",
+    ingredients: ["brussels sprouts", "garlic", "salmon"],
+    category: "Dinner",
+    img: "images/garlic_salmon.png",
+    page: 263,
+    url: "https://kellyleveque.com/recent-posts/2016/3/29/roasted-salmon-with-lemon-and-dill-over-arugula-and-mache",
+  },
+  {
+    num: "7",
+    name: "Green Goddess Fab Four Smoothie",
+    ingredients: ["protein powder", "avocado", "chia", "greens", "milk", "green powder", "lemon"],
+    category: "Breakfast",
+    img: "images/goddess_smoothie.png",
+    page: 221,
+    url: "https://kellyleveque.com/recent-posts/2015/7/9/the-bewell-smoothie",
+  },
+  {
+    num: "8",
+    name: "Coconut Tzatziki Chicken Skewers w/ Cucumber Salad",
+    ingredients: ["coconut milk", "lemon", "turmeric", "chicken", "coconut yogurt", "cucumbers", "lemon"],
+    category: "Dinner",
+    img: "images/coconut_tzatziki.png",
+    page: 230,
+    url: "https://www.thedoctorstv.com/recipes/kelly-leveque-body-love-every-day-recipes",
+  },
+  {
+    num: "9",
+    name: "Creamy Mocha Fab Four Smoothie",
+    ingredients: ["collagen", "coffee", "butter", "mct oil", "acacia fiber", "cinnamon", "cacao", "milk"],
+    category: "Breakfast",
+    img: null,
+    page: 264,
+    url: null,
   },
 ];

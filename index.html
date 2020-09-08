@@ -17,7 +17,7 @@
     <p class="text-muted">The recipes are based on the book by <a href="#" id="show_book" role="button">Kelly LeVeque "Body Love Every Day"</a></p>
     <div class="d-none" id="book">
       <button id="close_book" type="button" class="close" aria-label="Close" style="font-size: 3em">
-        <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true" style="pointer-events: none;">&times;</span>
       </button>
       <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B079DQG85M&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_K69uFbN500KP3"></iframe>
     </div>
@@ -27,6 +27,12 @@
       <h2>My Ingredients 🥗</h2>
       <p>Here is the food you have at home. Click 'Filter' button below to see the matching recipes.</p>
       <div id="ingredients"></div>
+    </div>
+
+    <div class="my-5">
+      <h2>Shopping Cart 🛒</h2>
+      <p>Here is the food you need to buy for the recipes you selected below because you don't have them at home.</p>
+      <div id="shopping_list"></div>
     </div>
 
     <div class="my-5 card bg-light card-body">
@@ -41,28 +47,43 @@
 
     <div class="my-5">
       <h2>Recipes 🍽️</h2>
-      <div class="my-3">
-        <button id="showAll" class="btn btn-outline-dark mr-2">Show All</button>
-        <button id="hideAll" class="btn btn-secondary mr-2">Hide All</button>
-        <button id="filter" class="btn btn-primary">Filter!</button>
+
+      <!-- Btn group w/ dropdown -->
+      <div>
+        <div class="btn-group my-3" role="group" aria-label="Actions">
+          <button id="showAll" class="btn btn-secondary">All Recipes</button>
+          <button id="hideAll" class="btn btn-outline-secondary">Hide All</button>
+
+          <!-- filter -->
+          <div class="btn-group" role="group">
+            <button id="filter_drop" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              Filter
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="filter_drop">
+              <li><a class="dropdown-item" href="#" id="filter" role="button">My Ingredients</a></li>
+              <li><a class="dropdown-item" href="#" id="breakfast" role="button">Breakfast</a></li>
+              <li><a class="dropdown-item" href="#" id="lunch" role="button">Lunch</a></li>
+              <li><a class="dropdown-item" href="#" id="dinner" role="button">Dinner</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <p id="filter_message"></p>
       <div id="cards">
-        <div class="alert alert-success" role="alert">
-          Yo, let's find some recipes for ya!
-        </div>
       </div>
     </div>
 
     <div class="my-5">
-      <h2>Resources</h2>
+      <h2>Resources 📗</h2>
       <p class="text-muted">Recipes by Kelly LeVeque</p>
       <ul class="list-group">
-        <li class="list-group-item"><a href="https://kellyleveque.com/recipes/fab-four-smoothie">Fab Four Smoothies</a></li>
-        <li class="list-group-item"><a href="https://kellyleveque.com/breakfast">Breakfast</a></li>
-        <li class="list-group-item"><a href="https://kellyleveque.com/lunch">Lunch</a></li>
-        <li class="list-group-item"><a href="https://kellyleveque.com/dinner">Dinner</a></li>
-        <li class="list-group-item"><a href="https://kellyleveque.com/recent-posts/2015/7/9/detoxifying-green-salad">Detox</a></li>
+        <li class="list-group-item"><a target="_blank" href="https://kellyleveque.com/recipes/fab-four-smoothie">Fab Four Smoothie Recipes</a></li>
+        <li class="list-group-item"><a target="_blank" href="https://kellyleveque.com/recent-posts/2015/7/9/the-bewell-smoothie">Fab Four Smoothie Generator</a></li>
+        <li class="list-group-item"><a target="_blank" href="https://kellyleveque.com/breakfast">Breakfast</a></li>
+        <li class="list-group-item"><a target="_blank" href="https://kellyleveque.com/lunch">Lunch</a></li>
+        <li class="list-group-item"><a target="_blank" href="https://kellyleveque.com/dinner">Dinner</a></li>
+        <li class="list-group-item"><a target="_blank" href="https://kellyleveque.com/recent-posts/2015/7/9/detoxifying-green-salad">Detox</a></li>
       </ul>
 
     </div>

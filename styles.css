@@ -2,6 +2,16 @@
   margin: 0 1rem 1rem 0;
 }
 
+.missing_ingredients.card {
+  margin: 1rem 0 0 0;
+  padding: .5rem 1rem;
+}
+
+.missing_ingredients .close {
+  position: absolute;
+  right: 10px;
+}
+
 @media only screen and (min-width: 700px) {
   #ingredUl {
     -moz-column-count: 2;
@@ -37,6 +47,42 @@ body {
 body>.container {
   background: aafaf7;
   background: white;
-  padding: 3rem;
+  padding-top: 3rem;
   border: 1px solid lightgray;
+}
+
+@media only screen and (min-width: 768px) {
+
+  body>.container {
+    padding: 3rem;
+  }
+
+  #book {
+    position: relative;
+  }
+
+  #close_book {
+    font-size: 3em;
+    float: unset;
+    position: absolute;
+    left: 347px;
+    top: -10px;
+  }
+}
+
+.action_btns>* {
+  width: 50%;
+}
+
+.ready {
+  position: absolute;
+  width: 30px;
+  right: 0;
+  margin: 10px;
+  border-radius: 7%;
+}
+
+.missing_ul {
+  background: white;
+  border-radius: 4px;
 }
