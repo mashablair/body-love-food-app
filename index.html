@@ -31,18 +31,9 @@
 
     <div class="my-5">
       <h2>Shopping Cart 🛒</h2>
-      <p>Here is the food you need to buy for the recipes you selected below because you don't have them at home.</p>
+      <p>Here is the missing food items you need for the recipes you selected below because you don't have them at home.</p>
+      <p>To add missing items, click <span class="border p-1">Add 🛒</span> button located on recipe cards below. </p>
       <div id="shopping_list"></div>
-    </div>
-
-    <div class="my-5 card bg-light card-body">
-      <h2>Specific food 🍤</h2>
-      <form action="" id="one_food">
-        <div class="mb-3">
-          <label for="input1" class="form-label">Enter one food item to see recipes with it</label>
-          <input type="text" class="form-control" id="input1" placeholder="e.g. avocado or fish">
-        </div>
-      </form>
     </div>
 
     <div class="my-5">
@@ -67,6 +58,16 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="card bg-light card-body w-50 p-3">
+        <h3 class="h4 mb-0">Search by food</h3>
+        <form action="" id="one_food">
+          <div>
+            <label for="input1" class="form-label">Enter one food item to see recipes with it</label>
+            <input type="text" class="form-control" id="input1" placeholder="e.g. avocado or fish">
+          </div>
+        </form>
       </div>
 
       <p id="filter_message"></p>
