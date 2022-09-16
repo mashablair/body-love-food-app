@@ -147,27 +147,27 @@
   ],
   "people": [
     {
-      "mama": "Masha",
+      "name": "Masha",
       "id": 0
     },
     {
-      "papa": "Elijah",
+      "name": "Elijah",
       "id": 1
     },
     {
-      "baby": "Ninja",
+      "name": "Ninja",
       "id": 2
     },
     {
-      "pet": "KittenBull",
+      "name": "KittenBull",
       "id": 3
     },
     {
-      "toy": "Valentino",
+      "name": "Valentino",
       "id": 4
     },
     {
-      "plant": "Cactus",
+      "name": "Cactus",
       "id": 5
     }
   ]
